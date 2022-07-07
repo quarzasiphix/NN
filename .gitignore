@@ -3,3 +3,8 @@ bin/
 bin-int/
 .vs/
 vsProject/
+
+#submodules
+#vendors/json
+#vendors/spdlog
+
