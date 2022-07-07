@@ -5,6 +5,6 @@ bin-int/
 vsProject/
 
 #submodules
-#vendors/json
-#vendors/spdlog
+vendors/json
+vendors/spdlog
 
