@@ -1,0 +1,5 @@
+#build dirs
+bin/
+bin-int/
+.vs/
+vsProject/

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sandbox", "sandbox\sandbox.vcxproj", "{0747F1FD-42CB-4E6E-B5E5-DA75CF4BC5A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A4BE379-190F-480E-B5E1-1347F51B652C} = {8A4BE379-190F-480E-B5E1-1347F51B652C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Nueral-Network", "Nueral-Network\NueralNetwork\Nueral-Network.vcxproj", "{7BA9A554-934D-4962-97D5-6AB46403BC18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sengine", "engine\engine.vcxproj", "{8A4BE379-190F-480E-B5E1-1347F51B652C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BA9A554-934D-4962-97D5-6AB46403BC18} = {7BA9A554-934D-4962-97D5-6AB46403BC18}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0747F1FD-42CB-4E6E-B5E5-DA75CF4BC5A3}.Release|x64.ActiveCfg = Release|x64
+		{0747F1FD-42CB-4E6E-B5E5-DA75CF4BC5A3}.Release|x64.Build.0 = Release|x64
+		{7BA9A554-934D-4962-97D5-6AB46403BC18}.Release|x64.ActiveCfg = Release|x64
+		{7BA9A554-934D-4962-97D5-6AB46403BC18}.Release|x64.Build.0 = Release|x64
+		{8A4BE379-190F-480E-B5E1-1347F51B652C}.Release|x64.ActiveCfg = Release|x64
+		{8A4BE379-190F-480E-B5E1-1347F51B652C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A2F3404-CC4A-48D0-AD40-B2B4E43B6EF4}
+	EndGlobalSection
+EndGlobal
