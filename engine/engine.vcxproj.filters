@@ -15,21 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\sengine\sengine.cpp">
+    <ClCompile Include="Sengine\src\sengine\log\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sengine\src\sengine\sengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sengine\src\sengine\app\app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\sengine\sengine.hpp">
+    <ClInclude Include="Sengine\src\sengine\log\log.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\sengine\core.hpp">
+    <ClInclude Include="Sengine\src\sengine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\sengine.h">
+    <ClInclude Include="Sengine\src\sengine\core\core.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\sengine\startup.h">
+    <ClInclude Include="Sengine\src\sengine\sengine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sengine\src\sengine\core\startup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sengine\includes\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sengine\includes\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sengine\src\sengine\app\app.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

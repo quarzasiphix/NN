@@ -1,6 +1,6 @@
 [submodule "vendors/spdlog"]
-	path = vendors/spdlog
+	path = vendors/repos/spdlog
 	url = https://github.com/gabime/spdlog.git
 [submodule "vendors/json"]
-	path = vendors/json
+	path = vendors/repos/json
 	url = https://github.com/nlohmann/json.git

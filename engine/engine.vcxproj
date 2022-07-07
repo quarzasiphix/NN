@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Release|x64">
@@ -45,6 +45,7 @@
       <PreprocessorDefinitions>SE_BUILD;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendors\repos\json\include/;$(SolutionDir)vendors\repos\spdlog\include/; $(ProjectDir)Sengine/;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -54,13 +55,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\sengine\sengine.cpp" />
+    <ClCompile Include="Sengine\src\sengine\app\app.cpp" />
+    <ClCompile Include="Sengine\src\sengine\log\log.cpp" />
+    <ClCompile Include="Sengine\src\sengine\sengine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\sengine.h" />
-    <ClInclude Include="src\sengine\core.hpp" />
-    <ClInclude Include="src\sengine\sengine.hpp" />
-    <ClInclude Include="src\sengine\startup.h" />
+    <ClInclude Include="Sengine\src\sengine\app\app.h" />
+    <ClInclude Include="Sengine\includes\common.h" />
+    <ClInclude Include="Sengine\src\sengine\log\log.hpp" />
+    <ClInclude Include="Sengine\src\sengine.h" />
+    <ClInclude Include="Sengine\src\sengine\core\core.hpp" />
+    <ClInclude Include="Sengine\src\sengine\sengine.hpp" />
+    <ClInclude Include="Sengine\src\sengine\core\startup.h" />
+    <ClInclude Include="Sengine\includes\common.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
