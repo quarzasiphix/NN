@@ -1,6 +1,9 @@
-[submodule "vendors/spdlog"]
+[submodule "spdlog"]
 	path = vendors/repos/spdlog
 	url = https://github.com/gabime/spdlog.git
-[submodule "vendors/json"]
+[submodule "json"]
 	path = vendors/repos/json
 	url = https://github.com/nlohmann/json.git
+[submodule "vendors/repos/eventpp"]
+	path = vendors/repos/eventpp
+	url = https://github.com/wqking/eventpp.git
