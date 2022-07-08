@@ -43,7 +43,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Nueral-Network/; $(SolutionDir)engine/; $(SolutionDir)engine\Sengine/;  $(SolutionDir)vendors\repos\json\include/;$(SolutionDir)vendors\repos\spdlog\include/; </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Nueral-Network/;$(SolutionDir)engine\Sengine;$(SolutionDir)engine\Sengine/;$(SolutionDir)vendors\repos\json\include/;$(SolutionDir)vendors\repos\spdlog\include/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -57,8 +57,8 @@
     <ClCompile Include="src\sanbox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\engine\engine.vcxproj">
-      <Project>{8a4be379-190f-480e-b5e1-1347f51b652c}</Project>
+    <ProjectReference Include="..\engine\Sengine\Sengine.vcxproj">
+      <Project>{17672ae8-eb64-423b-a5f1-59fbc3362098}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

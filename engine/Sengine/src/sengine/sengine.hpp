@@ -1,5 +1,4 @@
 #pragma once
-#include "includes/common.h"
 
 namespace Sengine {
 	class SeApi sengine {

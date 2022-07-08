@@ -1,4 +1,5 @@
 #pragma once
+#include "includes/common.h"
 
 #ifdef WINDOWS
 extern Sengine::sengine* Sengine::SeSart();

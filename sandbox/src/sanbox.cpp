@@ -1,4 +1,4 @@
-#include <Sengine/src/sengine.h>
+#include <src/sengine.h>
 
 class sandbox : public Sengine::sengine
 {

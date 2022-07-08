@@ -1,12 +1,12 @@
 #pragma once
 // include header, 
 
-
-#include <Sengine/src/sengine/sengine.hpp>
-#include <Sengine/src/sengine/log/log.hpp>
-#include <Sengine/src/sengine/sengine.hpp>
-
 // entry point
-#include <Sengine/src/sengine/core/startup.h>
+#include <includes/common.h>
 
+#include <src/sengine/core/core.hpp>
+#include <src/sengine/log/log.hpp>
+#include <src/sengine/sengine.hpp>
+
+#include <src/sengine/core/startup.h>
 

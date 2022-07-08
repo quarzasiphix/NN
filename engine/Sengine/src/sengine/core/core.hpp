@@ -6,8 +6,8 @@
 #endif // DEV
 
 #ifdef WINDOWS
+	// Export
 	#ifdef SE_BUILD
-		// Export
 		#define SeApi __declspec(dllexport)
 	#else 
 		// Import

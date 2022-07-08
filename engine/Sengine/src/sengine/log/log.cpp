@@ -1,4 +1,4 @@
-#include "log.hpp"
+#include "includes/common.h"
 
 namespace Sengine {
 	std::shared_ptr<spdlog::logger> log::s_ClientLogger;
