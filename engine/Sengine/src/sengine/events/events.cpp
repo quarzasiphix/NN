@@ -1,61 +1,86 @@
 #include "events.hpp"
 
 namespace Sengine {
-
-	template<class E>
-	template<class T>
-	bool events<E>::SengineEvents<T>::exists(E(*func)(T** argc[])) {
-		std::map<T, std::vector<T>> events;
-		if (events.begin() == events.find((*func)(T * *argc[]))) return false;
-		else {
-			position = (events.begin == events.find(T))
-				return true;
-		}
+	
+	// event system ---
+	/*
+	template <class Et>
+	template <class Ts>
+	template <typename f>
+	template <typename a>
+	bool event<Et>::manage<Ts>::exists(f(*func)(a** argc[])) {
+		if (events_map.begin() == events_map.find(Et(*func)(Ts** argc[]))) return false;
+		else position = (events_map.begin == events_map.find(T))
+		return true;
 	}
 
-	template<class E>
-	template<class T>
-	bool events<E>::SengineEvents<T>::add_event(E(*func)(T** argc[])) {
-		return events->push_back(T);
+	template <class Et>
+	template <class Ts>
+	template <typename f>
+	template <typename a>
+	bool event<Et>::manage<Ts>::add_event(Et(*func)(Ts** argc[])) {
+		return sevents->push_back(T);
 	}
 
-	template<class E>
-	template<class T>
-	inline bool events<E>::SengineEvents<T>::append(T, E(*func)(T** argc[])) {
-		if (exists(T) == false) add_event(T)
+	template<class Et>
+	template<class Ts>
+	template <typename f>
+	template <typename a>
+	inline bool event<Et>::manage<Ts>::append(Et(*func)(Ts** argc[])) {
+		if (exists(Et(*func)(Ts** argc[])) == false) add_event(Ts)
 		else return false;
 	}
 
-	template<class E>
-	template<class T>
-	bool events<E>::SengineEvents<T>::dispatch(E, T)
+	template<class Et>
+	template<class Ts>
+	template <typename f>
+	template <typename a>
+	bool event<Et>::manage<Ts>::dispatch(f, a)
 	{
-		events[E(*func)(T * *argc[])](T);
+		sevents[f(*func)(a **argc[])](a);
 	}
 
-	template<class E>
-	template<class T>
-	bool events<E>::SengineEvents<T>::rm(E, T)
+	template <class Et>
+	template <typename f>
+	bool event<Et>::manage<Ts>::rm(f(*func)(a** argc[]))
 	{
-		if (exists(E(*func)(T * *argc[])))) {
-			events[]
-}
+		if (exists(f(*func)(a **argc[]) == true) {
+			sevents[f(*func)(a * *argc[])].clear()
+		}	
 		
 	}
-
-	template<class E>
-	template<class  T>
-	inline bool events<E>::SengineEvents<T>::call(T) {
-		if (exists(E(*func)(T **argc[])) == true) return dispatch(T, T);
-		else return false;
+	*/
+	/*
+	template <class Et>
+	template <class Ts>
+	template <typename i>
+	bool event<Et>::manage<Ts>::exists(i(*func)(i** argc[])) {
+		if (events_map.begin() == events_map.find(i(*func)(i**argc[]))) return false;
+		else position = (events_map.begin == events_map.find(T))
+			return true;
 	}
 
-
-	template<class E>
-	template<class T>
-	bool events<E>::SengineEvents<T>::remove(T)
+	template<class Et>
+	template<class Ts>
+	template <typename i>
+	bool event<Et>::manage<Ts>::dispatch(i, i)
 	{
-		if (exists(E) == true) return rm(E(*func)(T * *argc[]))
+		sevents[i(*func)(i**argc[])](i** argc[]);
+	}
+
+	template <class Et>
+	template <typename i>
+	inline bool event<Et>::call(i, i** argc[]) {
+		if (this.exists(i(*func)(i **argc[])) == true) return dispatch(Et, i);
 		else return false;
 	}
+
+
+	template <class Et>
+	template <typename i>
+	bool event<Et>::remove(i)
+	{
+		if (exists(events[]) == true) return rm(Et(*func)(Ts * *argc[]))
+		else return false;
+	}*/
 }

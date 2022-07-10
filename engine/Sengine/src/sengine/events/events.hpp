@@ -2,45 +2,57 @@
 #include "includes/common.h"
 
 namespace Sengine {
+	class events {
+		//eventpp::EventDispatcher<int, void()> dispatcher;
+
+	};
+
+
+	// making event dispatcher via eventpp api
+	/*
 	enum class Se_events {
 		none = 0,
 		yes, no,
 		test
 	};
 
-	template <class E>
-	class events {
-		std::vector<E>* events;
-		std::map<E, std::vector<T>>* events_map = std::map(E, events);
-		eventpp::EventDispatcher<E, events> dispatcher;
-		template <class T >
-		class SengineEvents : public events{
-			std::vector<T>* events;
-			Se_events sevent;
-			bool add_event(E(*func)(T** argc[]));
-		public:
-			std::map<T, std::vector<T>>* events_map = std::map(T, events);
+	template <class Et>
+	class event {;
+	struct events {
+		eventpp::EventDispatcher<Et, std::vector<Et>> dispatcher;
+		std::vector<Et>* event_funcs;
+		std::map<Et, event_funcs>* events_map = std::map(Et, event_funcs);
+	};
+		template <class Ts>
+		class manage : public events{
+			enum class eSeventT{eSevents};;
+			std::vector<Ts>* sevents;
+
+			template <typename i>
+			bool add_event(i(*func)(i** argc[]));
 			int position;
-			bool exists(E(*func)(T** argc[]));
-			bool call(T);
-			bool remove(T);
-			bool append(E(*func)(void** argc[]));
-			bool dispatch(E, T);
-			bool rm(E, T);
+		public:
+			std::map<Et, sevents>* events_map = std::map(Ts, sevents);
+			
+			template <typename i>
+			bool exists(i(*func)(i** argc[]));
+			
+			template <typename i>
+			bool dispatch(i, i);
+			
+			template <typename i>
+			bool append(i(*func)(i** argc[]));
+			
+			template <typename i>
+			bool rm(i(*func)(i** argc[]));
 		};
 	public:
-		/*
-		SengineEvents Sevent;
-		std::map events_map;
-		const char* buffer{ false };
-		bool find(T, T(*func)(T** argc[]));
-		bool append(T, T(*func)(T** argc[]));
-		bool dispatch(T, T(*func)(T** argc[]));
-		bool call(T, T** argc[]);*/
+		const char* buffer{};
+		template <typename i>
+		bool call(i, i** argc[]));
+		template <typename i>
+		bool remove(i);
 
-	};
-
-
-
+	};*/
 }
 
