@@ -2,9 +2,17 @@
 #include "includes/common.h"
 
 namespace Sengine {
+	//Et = event type
+	template <class Et>
 	class events {
-		//eventpp::EventDispatcher<int, void()> dispatcher;
-
+		Et& event_type;
+		struct events {
+			std::vector<>* funcsPtrs;
+			std::vector<event_type> unsorted_events;
+			std::map<event_type, unsorted_events>* events_map
+			std::vector<event_type> unsorted_events;
+			//std::map<Et, event_funcs>* events_map = std::map(Et, event_funcs);
+		};
 	};
 
 

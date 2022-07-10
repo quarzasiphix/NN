@@ -14,7 +14,6 @@
 
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
-#include <eventpp/eventdispatcher.h>
 
 #include <src/sengine/core/core.hpp>
 #include <src/sengine/log/log.hpp>

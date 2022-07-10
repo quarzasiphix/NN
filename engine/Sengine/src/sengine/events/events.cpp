@@ -3,7 +3,7 @@
 namespace Sengine {
 	
 	// event system ---
-	/*
+	
 	template <class Et>
 	template <class Ts>
 	template <typename f>

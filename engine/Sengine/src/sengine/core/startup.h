@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 	Sengine::log::init();
 	SeLog_core_warn("intialised log!");
 	SeLog_info("testing");
-
+	SeLog_info("test2");
 	auto app = Sengine::SeSart();
 
 	app->run();
